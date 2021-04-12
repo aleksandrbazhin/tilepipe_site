@@ -16,7 +16,7 @@ This site is here since the purpose and usage of the program is not obvious to e
 
 ## Be sure to check out the [Tutorial](tutorial.html)
 
-#### You can download the program from itch.io, it's free
+#### Download TilePipe from itch.io, it's free
 <iframe src="https://itch.io/embed/795448?dark=true" width="552" height="167" frameborder="0"><a href="https://aleksandrbazhin.itch.io/tilepipe">TilePipe by aleksandrbazhin</a></iframe>
 
 

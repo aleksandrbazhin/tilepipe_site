@@ -3,13 +3,13 @@
 Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe and this program is all about. 
 
 ### What are autotiles and what is the problem?
-With specially prepared tilesets you can just paint maps in your games and the necessary tile variations like corners or sides will be substituted automatically. But to prepare those tilesets you have to copy-paste repeatedly the same tile fragments which is a lot of manual work. So I made this automation tool, which copies the tile parts all around and combines them in various ways. There are several different types of autotiling, but most usable for me was 47-tile blob tileset, you can read more in the link in the description www.cr31.co.uk/stagecast/wang/blob.html.
+With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides are substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts around and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here www.cr31.co.uk/stagecast/wang/blob.html. 
 
 ### What is TilePipe?
-The name TilePipe comes from “tileset pipeline” since it is targeted at automating the tileset creation process. Desired workflow is - you draw only the parts of tiles that differ between tile types, like the corner of the tile differs from the side or from full tile. All the copying is done automatically by TilePipe, so that from changing a part of the initial drawing to getting your result map changed there is no delay. These tilesets are not bound to 2d games or pixel-art, for example, tilesets can be used to highlight move area in turn based games.
+The name TilePipe comes from “tileset pipeline” since it is targeted at automating the tileset creation process. Desired workflow is - you draw only the parts of tiles that differ between tile types, like the corner of the tile differs from the side or from the center. All the copying is then done automatically by TilePipe.
 
 ### So, how to use the program?
-There are 2 inputs in the process - one is the drawing of the parts that are repeated in tiles and the other is the template of how to position the resulting tiles. The tile parts you have to draw in your favourite graphical editor, like MSPaint, Krita or Aseprite. The template default is set for 47-tile blobs and in most cases you are good with it. In the popular open-source program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
+There are 2 inputs in the process - one is the drawing of the parts that are repeated in tiles and the other is the template of how to position the resulting tiles. You have to draw tile parts for TilePipe in your favourite graphical editor. The template default is set for 47-tile blobs and in most cases you are good with it. In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
 
 ### The UI overview
 Let’s take a quick look at the interface. Here is how the UI looks currently (0.1.4):
@@ -25,7 +25,15 @@ Let’s take a quick look at the interface. Here is how the UI looks currently (
 
 ### Generation settings
 #### Generation type
-First of all you need to select the generation type. There are 2 types for now (version 0.1.4). The default selected type is to combine the quarters of the tile to create a full tile. This is very useful for creating movement highlight tilesets and such, because they are usually simpler than game map tiles. The other type merges a tile from 9 parts - center, 4 sides and 4 corners with possible overlap. It overlays the corner over the center part, that’s why it’s called “Overlay”. 
+First of all you need to select the generation type. The default generation combines the quarters of the tile to create a full tile. This is useful for creating movement highlight tilesets and such, because they are usually simpler than game map tiles. The other type merges a tile from 9 parts - center, 4 sides and 4 corners with possible overlap. It overlays the corner over the center part, that’s why it’s called “Overlay”. 
+
+That's how the tile is composed from quarters
+![Current UI](images/quarters.png)
+
+That's an overlay composition - center is under the sides and corners
+![Current UI](images/overlay.png)
+
+
 #### Generation preset
 Next you can choose the preset to use. Quarter merge generation has 2 presets and overlay type has three. For both generation types the 4-part preset is the most basic and easy to understand. For the quarter merge 5-part preset I added the 5th quarter type to use around corners for the result to look more interesting. As for overlay generation, the 8-part preset is used for sideview tilemaps, as the top and bottom sides and corners would vary in that case. The 13-tile is used when the sides vary also, for example, have a shadow on one side.
 #### Preset input example

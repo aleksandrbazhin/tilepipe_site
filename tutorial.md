@@ -1,5 +1,3 @@
-# Tutorial
-
 Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe and this program is all about. 
 
 ### What are autotiles and what is the problem?
@@ -72,4 +70,4 @@ That’s it on a basic functionality. But here are a couple of notes:
 
 **There may be some bugs or errors due to wrong input or something like that, please report them on the itch.io or the discord provided.**
 
-### [Return](/)
+## [Return](index.html)

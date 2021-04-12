@@ -9,8 +9,9 @@ You can download the program from itch.io, it's free
 The tileset editor UI in Godot 3 is not convinient to express it lightly. And copying the same 4 corners for 47 * 4 times was too boring, everytime hunting for a pixel makes eyes bleed. So here it is.
 
 - What are the alternatives?
+```
 Check out Tilesetter, it looks good. Maybe, if I found it before making TilePipe, I would not even start with.
-
+```
 - Is it opensource?
 No, but may become in the future. 
 

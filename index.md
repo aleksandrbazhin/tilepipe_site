@@ -6,7 +6,16 @@ This site is here since the purpose and usage of the program is not obvious to e
 - Create sipmle tilesets for pixelart platformers.
 - Create not game-ready tilesets, but tileset drafts to later modify and tweak in grahical editor
 
-You can download the program from itch.io, it's free
+### With input like this
+
+![example input](images/overlay_13_pixelart.png)
+
+### You can get autotile-ready tileset like this 
+
+![example output](images/generated.png)
+
+
+### You can download the program from itch.io, it's free
 <iframe src="https://itch.io/embed/795448?dark=true" width="552" height="167" frameborder="0"><a href="https://aleksandrbazhin.itch.io/tilepipe">TilePipe by aleksandrbazhin</a></iframe>
 
 ## Be sure to check out the [Tutorial](tutorial.html)

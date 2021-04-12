@@ -23,7 +23,7 @@ Let’s take a quick look at the interface. Here is how the UI looks currently (
 6. At the bottom you can see the resulting tileset preview and some options including scaling and smoothing, which is the desired option for pixel-art.
 7. The outmost right part has the buttons for saving the tileset as an image or exporting to the Godot autotile tileset. Other export formats may be supported later.
 
-### Options in detail
+### Generation settings
 #### Generation type
 First of all you need to select the generation type. There are 2 types for now (version 0.1.4). The default selected type is to combine the quarters of the tile to create a full tile. This is very useful for creating movement highlight tilesets and such, because they are usually simpler than game map tiles. The other type merges a tile from 9 parts - center, 4 sides and 4 corners with possible overlap. It overlays the corner over the center part, that’s why it’s called “Overlay”. 
 #### Generation preset
@@ -35,11 +35,11 @@ Under the preset selection there is the example, which can be used to better und
 All the example drawings you can download separately from the program from itch.io page. Creating your own drawings can be a bit tricky since you have to keep in mind where the tiles will merge with each other. 
 
 #### Quarters
-For quarters I would say it’s a lot harder to keep the tiles seamless, since in the overlay mode you don’t have to worry about the borders inside the tile and can adjust the result a bit by settings in TilePipe. 
+For quarters I would say it’s a lot harder to keep the tiles seemless, since in the overlay mode you don’t have to worry about the borders inside the tile and can adjust the result a bit by settings in TilePipe. 
 To make an input drawing for quarters merge you have to check that:
-1. Every border between quarters is seamless
-2. The second and the last tile match themselves - their top and right borders will be combined in the output
-3. All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly.
+1. Every drawn border between quarters is seemless
+2. The second and the last tile match themselves - their top and right borders will be combined in the output ![example for 4 quarters](images/quarters_4.png)
+3. All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly.![example for 4 quarters](images/quarters_4_2.png)
 
 Due to those limitations quarters are only good for tilesets with solid fill, like those move areas in turn-based games. 
 
@@ -49,10 +49,14 @@ For the Overlay presets you have to worry about how the sides and corners merge 
 ### Generation settings
 #### Randomization
 Both merge and overlay generation types have the random settings. “What random are you talking about?”, you might say.If you’ve noticed, in all input drawings the parts are placed in a row. Just add another row with altered parts to the image and the TilePipe will substitute random tile parts for every generated tile. You can use some predefined integer random seed to consistently substitute the same variants in the same tiles. It can be really useful, sometimes, trust me. While you don’t have a second row in your image, the random options is disabled. Randomisation is enabled if the aspect ratio of the input image suggests multiple rows with the chosen preset.
+![example for randomization with 4 quarters](images/generated_random.png)
+
 #### Overlay merge options
 For merge-type generation there are no other options, but for overlay-type there are 2 sliders. 
 1. First one is called “merge amount” and regulates how much of the corners and sides "take" of  the central part. With minimum the output will only consist of the center parts, with maximum, sides and corners will take all the space up to the center of each tile.
 2. The second slider is called “overlap amount”. It modifies how much of the central part will be “shoved” under the corners and side. If the corners and sides have no transparent parts, it will not make any change in the result.
+Example of applying different settings:
+![example with different options](images/merge_settings.png)
 
 ### Using different templates
 Why would you use a custom template. There can be different motives to such a move. You can not like how the result looks, for example. But two of the most common ones are:

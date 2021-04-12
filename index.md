@@ -1,26 +1,28 @@
-## TilePipe is a tool for game developers to speed up tileset creation
+# About TilePipe
 
+You can download the program from itch.io, it's free
 <iframe src="https://itch.io/embed/795448?dark=true" width="552" height="167" frameborder="0"><a href="https://aleksandrbazhin.itch.io/tilepipe">TilePipe by aleksandrbazhin</a></iframe>
 
+## FAQ (of course, no one asked those questions except the first one)
+- Why is it needed at all?
+The tileset editor UI in Godot 3 is not convinient to express it lightly. And copying the same 4 corners for 47 * 4 times was too boring, everytime hunting for a pixel makes eyes bleed. So here it is.
+- What are the alternatives?
+Check out Tilesetter, it looks good. Maybe, if I found it before making TilePipe, I would not even start with.
+- Is it opensource?
+No, but may become in the future. 
+- Is it paid?
+No, but there is a possibility to having a Pro version with export to GameMaker and Unity.
+
+
+## Current version: 0.1.4
 
 
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
 
 ```markdown
 Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 

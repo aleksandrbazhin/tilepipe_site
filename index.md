@@ -1,6 +1,6 @@
 # About TilePipe
 
-This site is need since the purpose of the program is obvious for a very small fracture of those who might find it useful. What can it be used for?
+This site is here since the purpose and usage of the program is not obvious to everyone who might find it useful. What can it be used for?
 - Create and modify tilesets fast during a jam.
 - Create tilesets for move zones and other highlights for 2d and 3d turn-based games.
 - Create sipmle tilesets for pixelart platformers.

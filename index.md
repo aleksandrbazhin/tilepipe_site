@@ -11,9 +11,6 @@ You can download the program from itch.io, it's free
 
 ## Be sure to check out the [Tutorial](tutorial.html)
 
-Here is how the UI looks currently, if you have questions how to use it, check out Documentation:
-![Current UI](images/ui.png)
-
 ## FAQ:
 (_of course, no one asked those questions except the first one_)
 

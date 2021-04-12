@@ -70,22 +70,22 @@ Both merge and overlay generation types have the random settings. “What random
 
 #### Overlay merge options
 For merge-type generation there are no other options, but for overlay-type there are 2 sliders. 
-1. First one is called “merge amount” and regulates how much of the corners and sides "take" of  the central part. With minimum the output will only consist of the center parts, with maximum, sides and corners will take all the space up to the center of each tile.
-2. The second slider is called “overlap amount”. It modifies how much of the central part will be “shoved” under the corners and side. If the corners and sides have no transparent parts, it will not make any change in the result.
+1. First one is called “merge amount” and regulates how much of the corners and sides "take" of  the central part. With minimum value, the output will only consist of the center parts, with maximum, sides and corners will take all the space up to the center of each tile.
+2. The second slider is called “overlap amount”. It modifies how much of the central part will be “shoved” under the corners and sides. If the corners and sides have no transparent parts, it will not make any change in the result.
 Example of applying different settings:
 ![example with different options](images/merge_settings.png)
 
 ### Using different templates
-Why would you use a custom template. There can be different motives to such a move. You can not like how the result looks, for example. But two of the most common ones are:
+There can be different motives to using templates other than the default ones. But two of the most common reasons ones are:
 
-You want less tiles. If you know beforehand that in your game you won’t have all the 47 variations, you can create a custom template with only a part of the tiles. To do that, download the example and cut a part you don’t want. The program checks every tile in 9 points and if it finds the transparent part, it considers that there will be no tile on that side. Just cut the example template as you want and you’ll be good.
+**You want less tiles.** If you know beforehand that in your game you won’t have all the 47 variations, you can create a custom template with only a part of the tiles. To do that, download the example and cut a part you don’t want. The program checks every tile in 9 points and if it finds the transparent part, it considers that there will be no tile on that side. Just cut the example template as you want and you’ll be good.
 
-You want more tiles. Why would you want it? Some engines, like the Godot substitute random tiles in the tilemap, if they find similar tiles in the tileset. So it’s general useful when you are using random input, as TilePipe will generate another tile everytime it finds the same tile in the template.
+**You want more tiles.** Most game engines, like the Godot substitute random tiles in the tilemap, if they find similar tiles in the tileset. So it is used when you are using random-ready input, as TilePipe will generate another tile everytime it finds the same tile in the template.
 
 ### Output composition settings 
 Here you can
 - Scale the result up and down from the input. For now only several tile sizes are supported, but I plan to add custom tile sizes as well as margin between tiles.
-- Change the smoothing. If you are working with pixelart, you want the smoothing to be on. Otherwise it should be generally on.
+- Change the smoothing. If you are working with pixelart, you want the smoothing to be off. Otherwise it should be generally on.
 
 ### Saving and exporting your results
 If you are happy with the tileset in the preview at the bottom, you can save the result as a png. For now TilePipe can only export tileset resources in the Godot format. To do that you have to save the png first inside your Godot project tree, then you can export the Godot resource also inside the existing Godot project. Saving inside the existing project is required since the path to the image is used in the resource and it has to be relative or you wouldn’t be able to run your game on another computer.

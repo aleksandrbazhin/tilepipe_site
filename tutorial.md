@@ -39,12 +39,17 @@ For quarters I would say it’s a lot harder to keep the tiles seemless, since i
 To make an input drawing for quarters merge you have to check that:
 1. Every drawn border between quarters is seemless
 2. The second and the last tile match themselves - their top and right borders will be combined in the output ![example for 4 quarters](images/quarters_4.png)
-3. All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly.![example for 4 quarters](images/quarters_4_2.png)
+3. All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly. ![example for 4 quarters](images/quarters_4_2.png)
 
 Due to those limitations quarters are only good for tilesets with solid fill, like those move areas in turn-based games. 
 
 #### Overlaying
-For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI. How to make the seamless merge between tiles is rather obvious here, but if it’s not, ask me in the comments or with any of the contacts provided below the video.
+For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI. How to make the seamless merge between tiles is rather obvious here, but if it’s not, ask me in the comments or with any of the contacts provided below the video. 
+
+For example, with input like this for overlay-13 no symmetry
+![example input](images/overlay_13_pixelart.png)
+You can get auttile-ready tileset like this
+![example output](images/generated.png)
 
 ### Generation settings
 #### Randomization

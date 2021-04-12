@@ -1,9 +1,9 @@
 # TilePipe tutorial
 
-Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe and this program is all about. 
+Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe.
 
 ### What are autotiles and what is the problem?
-With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides are substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts around and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here www.cr31.co.uk/stagecast/wang/blob.html. 
+With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here www.cr31.co.uk/stagecast/wang/blob.html. 
 
 ### What is TilePipe?
 The name TilePipe comes from “tileset pipeline” since it is targeted at automating the tileset creation process. Desired workflow is - you draw only the parts of tiles that differ between tile types, like the corner of the tile differs from the side or from the center. All the copying is then done automatically by TilePipe.

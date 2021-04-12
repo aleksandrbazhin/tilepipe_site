@@ -15,13 +15,13 @@ There are 2 inputs in the process - one is the drawing of the parts that are rep
 Let’s take a quick look at the interface. Here is how the UI looks currently:
 ![Current UI](images/ui.png)
 
-- At the top left you see the generation type selector and the preset you want to use. 
-- Next there is the part for your input drawing with the file selector. 
-- Further to the right you see the settings that can vary according to the chosen generation type. 
-- The part on the top right is the “preview” for generated tiles.
-- In the middle there is the template used to place the tiles in the resulting tileset. 
-- At the bottom you can see the resulting tileset preview and some options including scaling and smoothing, which is the desired option for pixel-art.
-- The outmost right part has the buttons for saving the tileset as an image or exporting to the Godot autotile tileset. Other export formats may be supported later.
+1. At the top left you see the generation type selector and the preset you want to use. 
+2. Next there is the part for your input drawing with the file selector. 
+3. Further to the right you see the settings that can vary according to the chosen generation type. 
+4. The part on the top right is the “preview” for generated tiles.
+5. In the middle there is the template used to place the tiles in the resulting tileset. 
+6. At the bottom you can see the resulting tileset preview and some options including scaling and smoothing, which is the desired option for pixel-art.
+7. The outmost right part has the buttons for saving the tileset as an image or exporting to the Godot autotile tileset. Other export formats may be supported later.
 
 ### Options in detail
 #### Generation type

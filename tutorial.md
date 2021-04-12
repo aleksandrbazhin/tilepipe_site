@@ -3,24 +3,24 @@
 Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe.
 
 ### What are autotiles and what is the problem?
-With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here www.cr31.co.uk/stagecast/wang/blob.html. 
+With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here www.cr31.co.uk/stagecast/wang/blob.html. In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
 
 ### What is TilePipe?
 The name TilePipe comes from “tileset pipeline” since it is targeted at automating the tileset creation process. Desired workflow is - you draw only the parts of tiles that differ between tile types, like the corner of the tile differs from the side or from the center. All the copying is then done automatically by TilePipe.
 
 ### So, how to use the program?
-There are 2 inputs in the process - one is the drawing of the parts that are repeated in tiles and the other is the template of how to position the resulting tiles. You have to draw tile parts for TilePipe in your favourite graphical editor. The template default is set for 47-tile blobs and in most cases you are good with it. In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
+There are 2 inputs in the process - one is the drawing of the parts that are repeated in tiles and the other is the template of how to position the resulting tiles. First you need to prepare tile parts for TilePipe in your favourite graphical editor, the process is decribed below. The template default is set for 47-tile blobs and in most cases you are good with it.
 
 ### The UI overview
 Let’s take a quick look at the interface. Here is how the UI looks currently (0.1.4):
 ![Current UI](images/ui_annotated.png)
 
-1. At the top left you see the generation type selector and the preset you want to use. 
-2. Next there is the part for your input drawing with the file selector. 
-3. Further to the right you see the settings that can vary according to the chosen generation type. 
-4. The part on the top right is the “preview” for generated tiles.
+1. At the top left you see the generation type and the preset selectors. 
+2. Next there is the preview for your input drawing with the file selector. 
+3. Further to the right you see some generation-specific settings. 
+4. The top right part is the “preview” for generated tiles.
 5. In the middle there is the template used to place the tiles in the resulting tileset. 
-6. At the bottom you can see the resulting tileset preview and some options including scaling and smoothing, which is the desired option for pixel-art.
+6. At the bottom you can see the resulting tileset preview and some options including scaling and smoothing.
 7. The outmost right part has the buttons for saving the tileset as an image or exporting to the Godot autotile tileset. Other export formats may be supported later.
 
 ### Generation settings

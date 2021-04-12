@@ -27,11 +27,14 @@ Let’s take a quick look at the interface. Here is how the UI looks currently (
 #### Generation type
 First of all you need to select the generation type. The default generation combines the quarters of the tile to create a full tile. This is useful for creating movement highlight tilesets and such, because they are usually simpler than game map tiles. The other type merges a tile from 9 parts - center, 4 sides and 4 corners with possible overlap. It overlays the corner over the center part, that’s why it’s called “Overlay”. 
 
-That's how the tile is composed from quarters
-![Current UI](images/quarters.png)
+The first images shows how the tile is composed from quarters and the second - an overlay composition, center is placed under the sides and corners
 
-That's an overlay composition - center is under the sides and corners
-![Current UI](images/overlay.png)
+![Quarters composition](images/quarters.png)
+![OVerlay composition](images/overlay.png)
+
+That's 
+
+
 
 
 #### Generation preset

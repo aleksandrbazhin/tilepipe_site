@@ -37,9 +37,9 @@ All the example drawings you can download separately from the program from itch.
 #### Quarters
 For quarters I would say it’s a lot harder to keep the tiles seamless, since in the overlay mode you don’t have to worry about the borders inside the tile and can adjust the result a bit by settings in TilePipe. 
 To make an input drawing for quarters merge you have to check that:
-1 Every border between quarters is seamless
-2 The second and the last tile match themselves - their top and right borders will be combined in the output
-3 All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly.
+1. Every border between quarters is seamless
+2. The second and the last tile match themselves - their top and right borders will be combined in the output
+3. All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly.
 
 Due to those limitations quarters are only good for tilesets with solid fill, like those move areas in turn-based games. 
 

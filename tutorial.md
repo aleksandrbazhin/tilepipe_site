@@ -59,13 +59,9 @@ Due to those limitations quarters are only good for tilesets with solid fill, li
 #### Overlaying
 For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI. How to make the seamless merge between tiles is rather obvious here, but if it’s not, ask me in the comments or with any of the contacts provided below the video. 
 
-For example, with input like this for overlay-13 no symmetry 
+For example, with input like this for overlay-13 no symmetry ![example input](images/overlay_13_pixelart.png)
 
-![example input](images/overlay_13_pixelart.png)
-
-You can get autotile-ready tileset like this 
-
-![example output](images/generated.png)
+You can get autotile-ready tileset like this ![example output](images/generated.png)
 
 ### Generation settings
 #### Randomization

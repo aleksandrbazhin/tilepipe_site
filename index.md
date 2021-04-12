@@ -6,22 +6,22 @@ This site is here since the purpose and usage of the program is not obvious to e
 - Create sipmle tilesets for pixelart platformers.
 - Create not game-ready tilesets, but tileset drafts to later modify and tweak in grahical editor
 
-### With input like this
+#### In short, with input like this
 
 ![example input](images/overlay_13_pixelart.png)
 
-### You can get autotile-ready tileset like this 
+#### You can get autotile-ready tileset like this 
 
 ![example output](images/generated.png)
 
-
-### You can download the program from itch.io, it's free
-<iframe src="https://itch.io/embed/795448?dark=true" width="552" height="167" frameborder="0"><a href="https://aleksandrbazhin.itch.io/tilepipe">TilePipe by aleksandrbazhin</a></iframe>
-
 ## Be sure to check out the [Tutorial](tutorial.html)
 
+#### You can download the program from itch.io, it's free
+<iframe src="https://itch.io/embed/795448?dark=true" width="552" height="167" frameborder="0"><a href="https://aleksandrbazhin.itch.io/tilepipe">TilePipe by aleksandrbazhin</a></iframe>
+
+
 ## FAQ:
-(_of course, no one asked those questions except the first one_)
+(_of course, no one ever asked those questions except the first one_)
 
 #### Why is it needed at all?
 The tileset editor UI in Godot 3 is not convinient to express it lightly. Also, copying the same 4 corners for 47 * 4 times is dull and hunting everytime for a pixel makes one's eyes bleed. So here it is.

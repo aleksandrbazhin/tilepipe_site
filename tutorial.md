@@ -37,13 +37,13 @@ The first images shows how the tile is composed from quarters and the second the
 Next you can choose which preset to use. Quarter merge generation has 2 presets and overlay type currently has 3. For both generation types the 4-part preset is the most basic and easy to understand. In the quarter merge 5-part preset the 5th quarter type was added to always be used around corner quarters for the result to look more interesting. As for overlay generation, the 8-part preset is used for sideview tilemaps, as the top and bottom sides and corners would vary in that case. The 13-tile is used when the sides vary also, for example, have a shadow on one side.
 
 #### Preset input example
-Under the preset selection there is the example, which can be used to better understand what’s going on or how to prepare your own input drawing. 
+Under the preset selection there is the example, which can be used to better understand what’s going on or how to prepare your own input drawing. More examples can be downloaded from itch.io page separately.
 
 ### Preparing input drawings
-All the example drawings you can download separately from the program from itch.io page. Creating your own drawings can be a bit tricky since you have to keep in mind where the tiles will merge with each other. 
+Creating your own drawings can be a bit tricky since you have to keep in mind where the tiles will merge with each other. 
 
 #### Quarters
-For quarters I would say it’s a lot harder to keep the tiles seemless, since in the overlay mode you don’t have to worry about the borders inside the tile and can adjust the result a bit by settings in TilePipe. 
+For quarters I would say it’s a lot harder to keep the tiles able to merge seemless on the map, since in the overlay mode you don’t have to worry about the borders inside the tile and can adjust the result a bit by settings in TilePipe. 
 To make an input drawing for quarters merge you have to check that:
 1. Every drawn border between quarters is seemless
 2. The second and the last tile match themselves - their top and right borders will be combined in the output 
@@ -54,10 +54,10 @@ Connecting borders for 4-quarters preset:
 ![example for 4 quarters](images/quarters_4.png)
 ![example for 4 quarters](images/quarters_4_2.png)
 
-Due to those limitations quarters are only good for tilesets with solid fill, like those move areas in turn-based games. 
+Due to those limitations quarters are mostly good for tilesets with solid fill, like those move areas in turn-based games. 
 
 #### Overlaying
-For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI. How to make the seamless merge between tiles is rather obvious here, but if it’s not, ask me in the comments or with any of the contacts provided below the video. 
+For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI later. Making the seemless merge between tiles is easier here - you must take care of the center tile to match itself first and foremost.
 
 For example, with input like this for overlay-13 no symmetry ![example input](images/overlay_13_pixelart.png)
 
@@ -65,7 +65,7 @@ You can get autotile-ready tileset like this ![example output](images/generated.
 
 ### Generation settings
 #### Randomization
-Both merge and overlay generation types have the random settings. “What random are you talking about?”, you might say.If you’ve noticed, in all input drawings the parts are placed in a row. Just add another row with altered parts to the image and the TilePipe will substitute random tile parts for every generated tile. You can use some predefined integer random seed to consistently substitute the same variants in the same tiles. It can be really useful, sometimes, trust me. While you don’t have a second row in your image, the random options is disabled. Randomisation is enabled if the aspect ratio of the input image suggests multiple rows with the chosen preset.
+Both merge and overlay generation types have the random settings. “What random are you talking about?”, you might say. If you’ve noticed, in all input drawings the parts are placed in a row. Just add another row with altered parts to the image and the TilePipe will substitute random tile parts for every generated tile. You can use some predefined integer random seed to consistently substitute the same variants in the same tiles. It can be really useful, sometimes, trust me. While you don’t have a second row in your image, the random options is disabled. Randomisation is enabled if the aspect ratio of the input image suggests multiple rows with the chosen preset, i.e. if the input for 4 quarter preset has the aspect ration more than 1:4.
 ![example for randomization with 4 quarters](images/generated_random.png)
 
 #### Overlay merge options

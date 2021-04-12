@@ -41,7 +41,7 @@ To make an input drawing for quarters merge you have to check that:
 2. The second and the last tile match themselves - their top and right borders will be combined in the output 
 4. All the sides without border, which are: all 4 sides of the 1st quarter, left and bottom part of the 2nd, bottom of the 3rd (and bottom of the 4th in 5 quarter preset) are combined smoothly
 
-Seamless transitions for 4-quarter preset:
+Connecting borders for 4-quarters preset:
 
 ![example for 4 quarters](images/quarters_4.png)
 ![example for 4 quarters](images/quarters_4_2.png)

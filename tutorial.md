@@ -12,8 +12,8 @@ The name TilePipe comes from “tileset pipeline” since it is targeted at auto
 There are 2 inputs in the process - one is the drawing of the parts that are repeated in tiles and the other is the template of how to position the resulting tiles. The tile parts you have to draw in your favourite graphical editor, like MSPaint, Krita or Aseprite. The template default is set for 47-tile blobs and in most cases you are good with it. In the popular open-source program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
 
 ### The UI overview
-Let’s take a quick look at the interface. Here is how the UI looks currently:
-![Current UI](images/ui.png)
+Let’s take a quick look at the interface. Here is how the UI looks currently (0.1.4):
+![Current UI](images/ui_annotated.png)
 
 1. At the top left you see the generation type selector and the preset you want to use. 
 2. Next there is the part for your input drawing with the file selector. 

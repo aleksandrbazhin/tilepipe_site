@@ -25,16 +25,17 @@ Let’s take a quick look at the interface. Here is how the UI looks currently (
 
 ### Generation settings
 #### Generation type
-First of all you need to select the generation type. The default generation combines the quarters of the tile to create a full tile. This is useful for creating movement highlight tilesets and such, because they are usually simpler than game map tiles. The other type merges a tile from 9 parts - center, 4 sides and 4 corners with possible overlap. It overlays the corner over the center part, that’s why it’s called “Overlay”. 
+First of all you need to select the generation type. The default generation combines the quarters of the tile to create a full tile. This is useful for creating movement highlight tilesets and such, because they are usually simpler than game map tiles. The other type merges a tile from 9 parts - center, 4 sides and 4 corners with possible overlap. It overlays the corners over the center part, that’s why it’s called “Overlay”. 
 
-The first images shows how the tile is composed from quarters and the second - an overlay composition, center is placed under the sides and corners:
+The first images shows how the tile is composed from quarters and the second the overlay-type composition, when center part is placed under the sides and corners:
 
 ![Quarters composition](images/quarters.png)
 ![OVerlay composition](images/overlay.png)
 
 
 #### Generation preset
-Next you can choose the preset to use. Quarter merge generation has 2 presets and overlay type has three. For both generation types the 4-part preset is the most basic and easy to understand. For the quarter merge 5-part preset I added the 5th quarter type to use around corners for the result to look more interesting. As for overlay generation, the 8-part preset is used for sideview tilemaps, as the top and bottom sides and corners would vary in that case. The 13-tile is used when the sides vary also, for example, have a shadow on one side.
+Next you can choose which preset to use. Quarter merge generation has 2 presets and overlay type currently has 3. For both generation types the 4-part preset is the most basic and easy to understand. In the quarter merge 5-part preset the 5th quarter type was added to always be used around corner quarters for the result to look more interesting. As for overlay generation, the 8-part preset is used for sideview tilemaps, as the top and bottom sides and corners would vary in that case. The 13-tile is used when the sides vary also, for example, have a shadow on one side.
+
 #### Preset input example
 Under the preset selection there is the example, which can be used to better understand what’s going on or how to prepare your own input drawing. 
 

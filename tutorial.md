@@ -77,4 +77,4 @@ That’s it on a basic functionality. But here are a couple of notes:
 
 **There may be some bugs or errors due to wrong input or something like that, please report them on the itch.io or the discord provided.**
 
-## [Return](index.html)
+## Return to [Main page](index.html)

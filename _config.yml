@@ -1,7 +1,7 @@
 github:
   is_project_page: false
 
-theme: jekyll-theme-tactile
+theme: jekyll-theme-slate
 title: TilePipe is a tool to generate tilesets
 description: Docs and info about TilePipe, a tool for game developers to automate some of the routine in tileset creation
 

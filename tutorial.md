@@ -55,7 +55,7 @@ For example, with input like this for overlay-13 no symmetry
 
 ![example input](images/overlay_13_pixelart.png)
 
-You can get auttile-ready tileset like this 
+You can get autotile-ready tileset like this 
 
 ![example output](images/generated.png)
 

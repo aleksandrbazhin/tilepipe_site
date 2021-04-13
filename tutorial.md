@@ -104,6 +104,7 @@ Here you can
 - Change the smoothing. If you are working with pixelart, you want the smoothing to be off. Otherwise it should be generally on.
 
 The example result of smoothing on and off
+
 ![example for smoothing](images/smoothing.png)
 
 

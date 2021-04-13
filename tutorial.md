@@ -95,6 +95,7 @@ There can be different motives to using templates other than the default ones. B
 To modify the template, take one from example and rearrange the tiles. The numbers in the UI over the template are the binary masks detected.
 
 Here is some custom template suggested in the Discord channel:
+
 ![custom template](images/template_47_with_duplicates.png)
 
 ### Output composition settings 

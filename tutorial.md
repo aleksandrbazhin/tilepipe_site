@@ -56,18 +56,19 @@ Connecting borders for 4-quarters preset:
 
 Due to those limitations quarters are mostly good for tilesets with solid fill, like those move areas in turn-based games. 
 
-Here is an example 5-quarter input and ![example for 5 quarters](images/move.png)
-some highlighted zones with the use of the resulting tileset ![example output for 5 quarters](images/quarters_example_out.png)
+Here is an example 5-quarter input and 
+![example for 5 quarters](images/move.png)
+
+some highlighted zones with the use of the resulting tileset 
+![example output for 5 quarters](images/quarters_example_out.png)
 
 #### Overlaying
 For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI later. Making the seemless merge between tiles is easier here - you must take care of the center tile to match itself first and foremost.
 
 For example, with input like this for overlay-13 no symmetry 
-
 ![example input](images/overlay_13_pixelart.png)
 
 You can get autotile-ready tileset like this
-
 ![example output](images/generated.png)
 
 ### Generation settings

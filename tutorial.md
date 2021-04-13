@@ -3,7 +3,7 @@
 Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe.
 
 ### What are autotiles and what is the problem?
-With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here www.cr31.co.uk/stagecast/wang/blob.html. In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
+With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, you can read more on it here [www.cr31.co.uk/stagecast/wang/blob.html](www.cr31.co.uk/stagecast/wang/blob.html). In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
 
 ### What is TilePipe?
 The name TilePipe comes from “tileset pipeline” since it is targeted at automating the tileset creation process. Desired workflow is - you draw only the parts of tiles that differ between tile types, like the corner of the tile differs from the side or from the center. All the copying is then done automatically by TilePipe.
@@ -56,6 +56,9 @@ Connecting borders for 4-quarters preset:
 
 Due to those limitations quarters are mostly good for tilesets with solid fill, like those move areas in turn-based games. 
 
+Here is an example 5-quarter input and ![example for 5 quarters](images/move.png)
+some highlighted zones with the use of the resulting tileset ![example output for 5 quarters](images/quarters_example_out.png)
+
 #### Overlaying
 For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI later. Making the seemless merge between tiles is easier here - you must take care of the center tile to match itself first and foremost.
 
@@ -82,10 +85,15 @@ There can be different motives to using templates other than the default ones. B
 
 **You want more tiles.** Most game engines, like the Godot substitute random tiles in the tilemap, if they find similar tiles in the tileset. So it is used when you are using random-ready input, as TilePipe will generate another tile everytime it finds the same tile in the template.
 
+To modify the template, take one from example and rearrange the tiles. The numbers in the UI over the template are the binary masks detected. Here is some custom template suggested in the Discord channel:
+![custom template](images/template_47_with_duplicates.png)
+
 ### Output composition settings 
 Here you can
 - Scale the result up and down from the input. For now only several tile sizes are supported, but I plan to add custom tile sizes as well as margin between tiles.
 - Change the smoothing. If you are working with pixelart, you want the smoothing to be off. Otherwise it should be generally on.
+The example result of smoothing on and off![example for smoothing](images/smoothing.png)
+
 
 ### Saving and exporting your results
 If you are happy with the tileset in the preview at the bottom, you can save the result as a png. For now TilePipe can only export tileset resources in the Godot format. To do that you have to save the png first inside your Godot project tree, then you can export the Godot resource also inside the existing Godot project. Saving inside the existing project is required since the path to the image is used in the resource and it has to be relative or you wouldn’t be able to run your game on another computer.

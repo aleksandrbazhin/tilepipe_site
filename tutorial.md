@@ -109,7 +109,11 @@ The example result of smoothing on and off
 
 
 ### Saving and exporting your results
-If you are happy with the tileset in the preview at the bottom, you can save the result as a png. For now TilePipe can only export tileset resources in the Godot format. To do that you have to save the png first inside your Godot project tree, then you can export the Godot resource also inside the existing Godot project. Saving inside the existing project is required since the path to the image is used in the resource and it has to be relative or you wouldn’t be able to run your game on another computer.
+If you are happy with the tileset in the preview at the bottom, you can save the result
+#### Save texture
+The texture you've made can be used in any map editor or can be tweaked in graphical editor before usage. For now if you want several autotiles in one texture, you'll need to combine them manually.
+#### Export
+For now TilePipe can only export tileset resources in the Godot format, so that you don't have to setup masks inside Godot tileset editor. To do that you have to save the png first inside your Godot project tree, then you can export the Godot resource also inside the existing Godot project. Saving inside the existing project is required since the path to the image is used in the resource and it has to be relative or you wouldn’t be able to run your game on another computer.
 
 ### Notes
 That’s it on a basic functionality. But here are a couple of notes:

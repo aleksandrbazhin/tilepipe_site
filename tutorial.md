@@ -58,7 +58,7 @@ Due to those limitations quarters are mostly good for tilesets with solid fill, 
 
 Here is an example of 5-quarter input and 
 
-![example for 5 quarters](images/move.png)
+![example for 5 quarters](images/move_transparent.png)
 
 some highlighted zones with the use of the resulting tileset
 

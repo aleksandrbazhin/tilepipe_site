@@ -62,9 +62,13 @@ some highlighted zones with the use of the resulting tileset ![example output fo
 #### Overlaying
 For the Overlay presets you have to worry about how the sides and corners merge with the center part, but that can be adjusted from the UI later. Making the seemless merge between tiles is easier here - you must take care of the center tile to match itself first and foremost.
 
-For example, with input like this for overlay-13 no symmetry ![example input](images/overlay_13_pixelart.png)
+For example, with input like this for overlay-13 no symmetry 
 
-You can get autotile-ready tileset like this ![example output](images/generated.png)
+![example input](images/overlay_13_pixelart.png)
+
+You can get autotile-ready tileset like this
+
+![example output](images/generated.png)
 
 ### Generation settings
 #### Randomization
@@ -85,14 +89,18 @@ There can be different motives to using templates other than the default ones. B
 
 **You want more tiles.** Most game engines, like the Godot substitute random tiles in the tilemap, if they find similar tiles in the tileset. So it is used when you are using random-ready input, as TilePipe will generate another tile everytime it finds the same tile in the template.
 
-To modify the template, take one from example and rearrange the tiles. The numbers in the UI over the template are the binary masks detected. Here is some custom template suggested in the Discord channel:
+To modify the template, take one from example and rearrange the tiles. The numbers in the UI over the template are the binary masks detected.
+
+Here is some custom template suggested in the Discord channel:
 ![custom template](images/template_47_with_duplicates.png)
 
 ### Output composition settings 
 Here you can
 - Scale the result up and down from the input. For now only several tile sizes are supported, but I plan to add custom tile sizes as well as margin between tiles.
 - Change the smoothing. If you are working with pixelart, you want the smoothing to be off. Otherwise it should be generally on.
-The example result of smoothing on and off![example for smoothing](images/smoothing.png)
+
+The example result of smoothing on and off
+![example for smoothing](images/smoothing.png)
 
 
 ### Saving and exporting your results

@@ -32,7 +32,11 @@ No, but may become in the future.
 #### Is it paid?
 No, but there is a possibility to having a Pro version with export to GameMaker and Unity.
 
-## Current version: 0.1.4
+## Current version: 0.2
+
+[0.2 release notes](https://aleksandrbazhin.itch.io/tilepipe/devlog/249143/version-02-is-out-major-ui-update)
+
+## Previous versions:
 
 [0.1.4 release notes](https://aleksandrbazhin.itch.io/tilepipe/devlog/240912/version-014-out-with-some-bug-fixes-and-improvements)
 

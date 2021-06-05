@@ -139,12 +139,13 @@ If you are happy with the tileset in the preview at the bottom, you can save the
 The texture you've made can be used in any map editor or can be tweaked in graphical editor before usage. For now if you want several autotiles in one texture, you'll need to combine them manually.
 #### Export
 For now TilePipe can only export tileset resources in the Godot 3.x format, so that you don't have to setup bitmasks for your autotile inside Godot tileset editor. Open the Godot 3 exporter and choose file name for your new or existing tileset, after that you can choose tile name, type and texture path to save to. Both tileset and output texture should be inside any existing Godot project tree. You can create a new tileset or add an autotile to an existing one, or even replace a tile in it.
+![example output](images/Godot3 exporter.png)
 
 ### Notes
 That’s it on a basic functionality. But here are a couple of notes:
 - The project is still under development, so any of the info may change.
-- For now there are no projects, so there can be only a singular autotile per file. 
-- All your settings from the previous launch are stored automatically, including file input and output paths, so that opening the program you have all your previous work restored at the start.
+- UI state from the previous launch is stored automatically, so that opening the program you have all your previous work restored at the start.
+- Instead of projects TilePipe saves UI state for every input file you load, so everything is also restored on openning a once openned input texture.
 
 **There may be some bugs or errors due to wrong input or something like that, please report them on the itch.io or the discord provided.**
 

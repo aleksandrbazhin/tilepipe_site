@@ -3,7 +3,7 @@
 Here is a quick rundown on how to create autoule-ready tilesets with Tilepipe.
 
 ### What are autotiles and what is the problem?
-With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, which takes into accounts both neighboring  sides and corners. You can read more on tiling here [www.cr31.co.uk/stagecast/wang/blob.html](www.cr31.co.uk/stagecast/wang/blob.html). In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
+With specially prepared tilesets you can paint maps in your games and tile variations like corners or sides will be substituted by game engine. But to prepare those tilesets you have to copy-paste the same tile fragments which may be a lot of manual work. So here is this automation tool, which copies the tile parts and combines them in various ways. There are several different types of autotiling, but the most usable for me was 47-tile blob tileset, which takes into accounts both neighboring  sides and corners. You can read more on tiling [here](http://www.cr31.co.uk/stagecast/wang/blob.html). In the popular program “Tiled” this type of tilesets are called “Mixed sets” with 2 types of terrain.
 
 ### What is TilePipe?
 The name TilePipe comes from “tileset pipeline” since it is targeted at automating the tileset creation process. Desired workflow is - you draw only the parts of tiles that differ between tile types, like the corner of the tile differs from the side or from the center and get the usable autotile-ready tileset. Then you fix something in the input image and rebuild the tileset quickly, then repeat it again and again.
@@ -138,7 +138,7 @@ If you are happy with the tileset in the preview at the bottom, you can save the
 #### Save texture
 The texture you've made can be used in any map editor or can be tweaked in graphical editor before usage. For now if you want several autotiles in one texture, you'll need to combine them manually.
 #### Export
-For now TilePipe can only export tileset resources in the Godot format, so that you don't have to setup masks inside Godot tileset editor. To do that you have to save the png first inside your Godot project tree, then you can export the Godot resource also inside the existing Godot project. Saving inside the existing project is required since the path to the image is used in the resource and it has to be relative or you wouldn’t be able to run your game on another computer.
+For now TilePipe can only export tileset resources in the Godot 3.x format, so that you don't have to setup bitmasks for your autotile inside Godot tileset editor. Open the Godot 3 exporter and choose file name for your new or existing tileset, after that you can choose tile name, type and texture path to save to. Both tileset and output texture should be inside any existing Godot project tree. You can create a new tileset or add an autotile to an existing one, or even replace a tile in it.
 
 ### Notes
 That’s it on a basic functionality. But here are a couple of notes:

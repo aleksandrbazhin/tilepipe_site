@@ -28,17 +28,7 @@ The tileset editor UI in Godot 3 is not convinient to express it lightly. Also, 
 #### What are the alternatives?
 Check out Tilesetter, it looks good. Maybe, if I found it before making TilePipe, I would have not even started with it.
 #### Is it opensource?
-No, but may become in the future. 
-#### Is it paid?
-No, but there is a possibility to having a Pro version with export to GameMaker and Unity.
-
-## Current version: 0.2
-
-[0.2 release notes](https://aleksandrbazhin.itch.io/tilepipe/devlog/249143/version-02-is-out-major-ui-update)
-
-## Previous versions:
-
-[0.1.4 release notes](https://aleksandrbazhin.itch.io/tilepipe/devlog/240912/version-014-out-with-some-bug-fixes-and-improvements)
+Yes, MIT license
 
 
 ## Links
